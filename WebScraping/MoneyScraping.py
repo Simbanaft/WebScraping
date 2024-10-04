@@ -12,7 +12,7 @@ def get_exchange_rate_by_date(date_url):
     if date_url.startswith("/"):
         url = f"https://www.cbr-xml-daily.ru{date_url}"  # Добавляем протокол и домен
     else:
-        url = date_url  # Если уже полный URL
+        url = date_url  # Если уже полный URL.
 
     response = requests.get(url)
     
